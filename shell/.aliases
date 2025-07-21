@@ -1,1 +1,11 @@
+# +--------------+
+# | Custom Alias |
+# +--------------+
+
 alias ll="ls -la"
+
+# +----------------------+
+# | GitHub Copilot Alias |
+# +----------------------+
+
+eval "$(gh copilot alias -- zsh)"
