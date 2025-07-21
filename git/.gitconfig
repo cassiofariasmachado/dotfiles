@@ -1,0 +1,58 @@
+[core]
+    pager = delta
+    editor = code --wait
+
+[user]
+  name = Cassio Farias Machado
+  email = me@cassiofariasmachado.com
+
+[init]
+  defaultBranch = main
+
+[interactive]
+  diffFilter = delta --color-only
+
+[pull]
+  ff = only
+
+[push]
+  default = simple
+  autoSetupRemote = true
+
+[log]
+  decorate = full
+  abbrevCommit = true
+
+[rerere]
+  enabled = true
+
+[diff]
+  colorMoved = default
+  indentHeuristic = true
+  submodule = log
+
+[color]
+  diff = always
+  interactive = always
+  status = always
+  branch = always
+
+[alias]
+  ci = commit
+  co = checkout
+  br = branch
+  sw = switch
+  st = status
+  rb = rebase
+  rbi = rebase -i
+  lo = log --oneline
+  pf = push --force-with-lease
+  fixup = commit --all --amend --no-edit
+  open = !explorer `git config remote.origin.url`
+  browse = !git open
+  up = push upstream main
+  sync = pull upstream main --rebase
+  which = !git branch | grep -i
+  daily = !sh -c 'git log --since=yesterday --format=%s --author=\"`git config user.email`\"'
+  graph = log --graph
+  squash = "!f() { git reset --hard $1; git merge --squash HEAD@{1}; git commit; }; f"
