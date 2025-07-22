@@ -2,7 +2,9 @@
 # | Custom Alias |
 # +--------------+
 
-alias ll="ls -la"
+alias ll="ls -alF"
+alias la="ls -A"
+alias l="ls -CF"
 
 # +----------------------+
 # | GitHub Copilot Alias |

@@ -10,6 +10,9 @@
     ~/.functions: shell/.functions
     ~/.zshrc: shell/.zshrc
 
+    # Kitty
+    ~/.config/kitty/kitty.conf: kitty/kitty.conf
+
     # Linters
     # ~/.eslintrc: linters/.eslintrc
 
