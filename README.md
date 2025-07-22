@@ -36,5 +36,5 @@ git pull
 
 ## Referências
 
-- [Posh files](https://github.com/giggio/dotfiles) do [Giovanni Bassi](https://github.com/giggio)
+- [dotfiles](https://github.com/giggio/dotfiles) do [Giovanni Bassi](https://github.com/giggio)
 - [Managing dotfiles and ZSH with dotbot and antigen](https://josnun.github.io/posts/managing-dotfiles-and-zsh-with-dotbot-and-antigen)
