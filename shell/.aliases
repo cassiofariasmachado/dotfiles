@@ -16,3 +16,8 @@ eval "$(gh copilot alias -- zsh)"
 # | Kubectl Alias |
 # +---------------+
 alias k="kubectl"
+
+# +------------+
+# | Helm Alias |
+# +------------+
+alias h="helm"
