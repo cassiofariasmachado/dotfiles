@@ -1,0 +1,3 @@
+# Ignore work-specific Git configuration
+# This file is included only if it exists, allowing for personal and work configurations to coexist.
+git/work.gitconfig

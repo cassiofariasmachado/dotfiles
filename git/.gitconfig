@@ -6,6 +6,9 @@
   name = Cassio Farias Machado
   email = me@cassiofariasmachado.com
 
+[include]
+  path = ~/.config/git/work.gitconfig
+
 [init]
   defaultBranch = main
 
@@ -45,6 +48,7 @@
   st = status
   rb = rebase
   rbi = rebase -i
+  rlc = reset HEAD~1
   lo = log --oneline
   pf = push --force-with-lease
   fixup = commit --all --amend --no-edit
