@@ -15,8 +15,8 @@ plugins=(
 # | Setup Aliases & Functions |
 # +---------------------------+
 
-source ~/.aliases
-source ~/.functions
+source ~/.config/zsh/.aliases
+source ~/.config/zsh/.functions
 
 # +---------+
 # | Kubectl |
