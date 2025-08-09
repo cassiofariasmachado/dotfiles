@@ -1,6 +1,6 @@
 [core]
     pager = delta
-    editor = code --wait
+    editor = nvim
 
 [user]
   name = Cassio Farias Machado
