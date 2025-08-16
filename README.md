@@ -6,16 +6,25 @@ Este repositório contém as configurações que normalmente uso nos arquivos `d
 
 Para instalar em uma nova máquina ou após atualizações:
 
-```
+```bash
 # Clonar o repositório
 git clone https://github.com/cassiofariasmachado/dotfiles.git ~/.dotfiles
 
 # Acessar a pasta do repo
 cd ~/.dotfiles
 
+# Executar script de instalação
 ./install.sh 
 # ou 
 ./install.ps1
+
+# Crie o arquivo work.gitconfig
+touch config/git/work.gitconfig
+
+# Atualize o arquivo com as configurações necessárias para o trabalho,  por exemplo:
+# [user]
+#   name = Cassio Farias Machado
+#   email = email@corp.com
 ```
 
 Para atualizar uma instalação existente:
@@ -28,7 +37,6 @@ cd ~/.dotfiles
 git pull
 
 # Executar script de instalação
-
 ./install.sh
 # ou
 ./install.ps1
