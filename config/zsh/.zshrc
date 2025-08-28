@@ -35,10 +35,24 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # +------+
+# | Go   |
+# +------+
+
+export GOPATH="$HOME/go"
+export GOBIN="$GOPATH/bin"
+
+# +------+
 # | PATH |
 # +------+
 
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+# Krew
+export PATH="$PATH:${KREW_ROOT:-$HOME/.krew}/bin"
+
+# Pipx
+export PATH="$PATH:/Users/cassio/.local/bin"
+
+# Go
+export PATH="$PATH:$GOBIN"
 
 
 # +-------------------+
@@ -63,3 +77,5 @@ case `uname` in
     eval "$(oh-my-posh init zsh --config ~/default.omp.json)"
   ;;
 esac
+
+
