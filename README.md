@@ -1,49 +1,61 @@
-# 📂 Configuração dos arquivos dotfiles
+# 📂 Dotfiles Configuration
 
-Este repositório contém as configurações que normalmente uso nos arquivos `dotfiles` e o gerenciamento delas através do [dotbot](https://github.com/anishathalye/dotbot).
+This repository contains the configurations I usually use in my `dotfiles` (aka. config files that start with a dot) and their management through [dotbot](https://github.com/anishathalye/dotbot).
 
-## Instalação
+## Installation
 
-Para instalar em uma nova máquina ou após atualizações:
+To install:
 
-```bash
-# Clonar o repositório
-git clone https://github.com/cassiofariasmachado/dotfiles.git ~/.dotfiles
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/cassiofariasmachado/dotfiles.git
+    ```
 
-# Acessar a pasta do repo
-cd ~/.dotfiles
+2. Go to the repo folder:
 
-# Executar script de instalação
-./install.sh 
-# ou 
-./install.ps1
+    ```bash
+    cd dotfiles
+    ```
 
-# Crie o arquivo work.gitconfig
-touch config/git/work.gitconfig
+3. (Optional) Add work configuration: 
 
-# Atualize o arquivo com as configurações necessárias para o trabalho,  por exemplo:
-# [user]
-#   name = Cassio Farias Machado
-#   email = email@corp.com
-```
+    3.1. Create the `work.gitconfig` file:
+    ```
+    touch config/git/work.gitconfig
+    ```
 
-Para atualizar uma instalação existente:
+    3.2. Update the file with the required work configuration, for example:
 
-```bash
-# Acessar a pasta do repo
-cd ~/.dotfiles
+    ```txt
+    [user]
+      name = Cassio Farias Machado
+      email = email@corp.com
+    ```
 
-# Executar pull dos 
-git pull
+4. Run the installation script:
 
-# Executar script de instalação
-./install.sh
-# ou
-./install.ps1
-```
+    ```bash
+    ./install.sh 
+    # or 
+    ./install.ps1
+    ```
 
-## Referências
+## Update
 
-- [dotfiles](https://github.com/giggio/dotfiles) do [Giovanni Bassi](https://github.com/giggio)
-- [Managing dotfiles and ZSH with dotbot and antigen](https://josnun.github.io/posts/managing-dotfiles-and-zsh-with-dotbot-and-antigen)
+To update:
+
+1. Go to the repo folder
+2. Pull the latest changes
+3. Run the installation script:
+
+    ```bash
+    ./install.sh
+    # or
+    ./install.ps1
+    ```
+
+## References
+
+- [dotfiles](https://github.com/giggio/dotfiles) by [Giovanni Bassi](https://github.com/giggio)  
+- [Managing dotfiles and ZSH with dotbot and antigen](https://josnun.github.io/posts/managing-dotfiles-and-zsh-with-dotbot-and-antigen)  
 - [LazyVim: Installation](https://www.lazyvim.org/installation)
