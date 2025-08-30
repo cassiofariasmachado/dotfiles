@@ -1,7 +1,7 @@
 $ErrorActionPreference = "Stop"
 
 $CONFIG = "install.conf.yaml"
-$DOTBOT_DIR = "Modules/dotbot"
+$DOTBOT_DIR = "external/dotbot"
 
 $DOTBOT_BIN = "bin/dotbot"
 $BASEDIR = $PSScriptRoot
