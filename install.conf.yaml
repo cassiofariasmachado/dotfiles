@@ -6,20 +6,25 @@
 - clean: ['~']
 
 - link:
-    # Shell stuff
-    ~/.config/zsh/.aliases: config/zsh/.aliases
-    ~/.config/zsh/.functions: config/zsh/.functions
-    ~/.zshrc: config/zsh/.zshrc
-
-    # Kitty
-    ~/.config/kitty/kitty.conf: config/kitty/kitty.conf
-
     # Git
     ~/.gitconfig: config/git/.gitconfig
     ~/.gitignore: config/git/.gitignore
     ~/.config/git/work.gitconfig:
       ignore-missing: true
       path: config/git/work.gitconfig
+
+    # ZSH
+    ~/.config/zsh/.aliases: config/zsh/.aliases
+    ~/.config/zsh/.functions: config/zsh/.functions
+    ~/.zshrc: config/zsh/.zshrc
+
+    # Powershell
+    ~/.config/powershell:
+      glob: true
+      path: config/posh/**
+
+    # Kitty
+    ~/.config/kitty/kitty.conf: config/kitty/kitty.conf
 
     # NeoVim
     ~/.config/nvim:

@@ -2,3 +2,11 @@
 	path = external/dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
+
+[submodule "posh-config"]
+	path = config/posh
+	url = https://github.com/cassiofariasmachado/posh-config
+
+[submodule "zsh-config"]
+	path = config/zsh
+	url = https://github.com/cassiofariasmachado/zsh-config
