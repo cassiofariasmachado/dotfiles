@@ -16,6 +16,9 @@
       ignore-missing: true
       path: config/git/work.gitconfig
 
+    # Oh My Posh themes
+    ~/default.omp.json: config/omp-themes/default.omp.json
+
     # ZSH
     ~/.config/zsh/.aliases: config/zsh/.aliases
     ~/.config/zsh/.functions: config/zsh/.functions

@@ -3,6 +3,10 @@
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
 
+[submodule "omp-themes"]
+	path = config/omp-themes
+	url = https://github.com/cassiofariasmachado/omp-themes
+
 [submodule "posh-config"]
 	path = config/posh
 	url = https://github.com/cassiofariasmachado/posh-config
