@@ -2,6 +2,39 @@
 
 set -e
 
+PROFILE=""
+SHOW_HELP=false
+
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --work| -w)
+      PROFILE="work"
+      shift
+      ;;
+    --help | -h)
+      SHOW_HELP=true
+      break
+      ;;
+    *)
+      shift
+      ;;
+  esac
+done
+
+if $SHOW_HELP; then
+  cat << EOF
+Installs the dotfiles configuration.
+
+Usage:
+  $(readlink -f "$0") [flags]
+
+Flags:
+  --work, -w                                 Use work profile
+  -h, --help                                 Show help
+EOF
+  exit 0
+fi
+
 CONFIG="install.conf.yaml"
 DOTBOT_DIR="external/dotbot"
 

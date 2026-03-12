@@ -40,6 +40,14 @@
       glob: true
       path: config/nvim/**
 
+    # Brewfile
+    ~/.Brewfile:
+      path: config/brew/.Brewfile
+
+    ~/.Brewfile-$PROFILE:
+      path: config/brew/.Brewfile-$PROFILE
+      if: "$PROFILE != ''"
+
     # Apps
     # ~/.hammerspoon: applications/.hammerspoon
     # ~/.zazurc.json: applications/.zazurc.json
@@ -49,3 +57,15 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+
+  - description: Installing Homebrew packages (default)
+    command: "[ -s $HOME/.Brewfile ] && echo \"brew bundle --file ~/.Brewfile\""
+    stdin: false
+    stdout: true
+    quiet: true
+
+  - description: Installing Homebrew packages (profile)
+    command: "[ -n \"$PROFILE\" ] && [ -s \"$HOME/.Brewfile-$PROFILE\" ] && echo \"brew bundle --file $HOME/.Brewfile-$PROFILE\""
+    stdin: false
+    stdout: true
+    quiet: true
