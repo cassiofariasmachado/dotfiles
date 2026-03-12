@@ -22,6 +22,9 @@
     # ZSH
     ~/.config/zsh/.aliases: config/zsh/.aliases
     ~/.config/zsh/.functions: config/zsh/.functions
+    ~/.config/zsh/.env-variables:
+      ignore-missing: true
+      path: config/zsh/.env-variables
     ~/.zshrc: config/zsh/.zshrc
 
     # Powershell
