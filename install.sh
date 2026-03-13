@@ -11,6 +11,10 @@ while [[ $# -gt 0 ]]; do
       PROFILE="work"
       shift
       ;;
+    --personal| -p)
+      PROFILE="personal"
+      shift
+      ;;
     --help | -h)
       SHOW_HELP=true
       break
@@ -35,6 +39,8 @@ EOF
   exit 0
 fi
 
+export PROFILE
+
 CONFIG="install.conf.yaml"
 DOTBOT_DIR="external/dotbot"
 
@@ -46,3 +52,5 @@ git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
 git submodule update --init --recursive "${DOTBOT_DIR}"
 
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
+
+unset PROFILE

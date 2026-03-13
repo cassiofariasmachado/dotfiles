@@ -42,11 +42,13 @@
 
     # Brewfile
     ~/.Brewfile:
+      if: '[ "$(uname)" = Darwin ] || [ "$(uname)" = Linux ]'
       path: config/brew/.Brewfile
 
     ~/.Brewfile-$PROFILE:
+      if: '[ "$(uname)" = Darwin ] || [ "$(uname)" = Linux ]'
       path: config/brew/.Brewfile-$PROFILE
-      if: "$PROFILE != ''"
+      ignore-missing: true
 
     # Apps
     # ~/.hammerspoon: applications/.hammerspoon
@@ -58,14 +60,7 @@
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
 
-  - description: Installing Homebrew packages (default)
-    command: "[ -s $HOME/.Brewfile ] && echo \"brew bundle --file ~/.Brewfile\""
-    stdin: false
+  - description: Installing Homebrew packages
+    command: bash ./scripts/install-brew-packages.sh
+    stdin: true
     stdout: true
-    quiet: true
-
-  - description: Installing Homebrew packages (profile)
-    command: "[ -n \"$PROFILE\" ] && [ -s \"$HOME/.Brewfile-$PROFILE\" ] && echo \"brew bundle --file $HOME/.Brewfile-$PROFILE\""
-    stdin: false
-    stdout: true
-    quiet: true
