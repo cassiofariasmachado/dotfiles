@@ -1,0 +1,6 @@
+tap "int128/kubelogin"
+
+brew "cloudfoundry-cli"
+brew "int128/kubelogin/kubelogin"
+brew "krew"
+brew "kyma-cli"

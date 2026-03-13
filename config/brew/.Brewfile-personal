@@ -1,0 +1,14 @@
+cask "displaylink"
+cask "discord"
+cask "docker-desktop"
+cask "firefox"
+cask "google-drive"
+cask "iterm2"
+cask "microsoft-edge"
+cask "rectangle"
+cask "spotify"
+cask "visual-studio-code"
+
+mas "HP", id: 1474276998
+mas "WhatsApp", id: 310633997
+mas "Windows App", id: 1295203466

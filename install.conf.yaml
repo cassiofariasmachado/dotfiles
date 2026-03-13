@@ -40,6 +40,16 @@
       glob: true
       path: config/nvim/**
 
+    # Brewfile
+    ~/.Brewfile:
+      if: '[ "$(uname)" = Darwin ] || [ "$(uname)" = Linux ]'
+      path: config/brew/.Brewfile
+
+    ~/.Brewfile-$PROFILE:
+      if: '[ "$(uname)" = Darwin ] || [ "$(uname)" = Linux ]'
+      path: config/brew/.Brewfile-$PROFILE
+      ignore-missing: true
+
     # Apps
     # ~/.hammerspoon: applications/.hammerspoon
     # ~/.zazurc.json: applications/.zazurc.json
@@ -49,3 +59,8 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+
+  - description: Installing Homebrew packages
+    command: bash ./scripts/install-brew-packages.sh
+    stdin: true
+    stdout: true
