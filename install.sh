@@ -34,9 +34,15 @@ Usage:
 
 Flags:
   --work, -w                                 Use work profile
+  --personal, -p                             Use personal profile
   -h, --help                                 Show help
 EOF
   exit 0
+fi
+
+if [[ -z "$PROFILE" ]]; then
+  echo "Error: profile not selected. Use --personal/-p or --work/-w." >&2
+  exit 1
 fi
 
 export PROFILE

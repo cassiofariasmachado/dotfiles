@@ -45,6 +45,11 @@ Flags:
     exit 0
 }
 
+if ([string]::IsNullOrWhiteSpace($PROFILE_NAME)) {
+    Write-Error "Error: profile not selected. Use --personal/-p or --work/-w."
+    exit 1
+}
+
 $env:PROFILE = $PROFILE_NAME
 
 $CONFIG = "install.conf.yaml"
