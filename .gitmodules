@@ -14,3 +14,11 @@
 [submodule "zsh-config"]
 	path = config/zsh
 	url = https://github.com/cassiofariasmachado/zsh-config
+
+[submodule "claude-config"]
+	path = config/claude
+	url = git@github.com:cassiofariasmachado/claude-config
+
+[submodule "skills"]
+	path = config/skills
+	url = git@github.com:cassiofariasmachado/skills

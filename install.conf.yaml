@@ -50,6 +50,16 @@
       path: config/brew/.Brewfile-$PROFILE
       ignore-missing: true
 
+    # Claude Code
+    ~/.claude/settings.json: config/claude/settings.json
+    ~/.claude/CLAUDE.md:
+      ignore-missing: true
+      path: config/claude/CLAUDE.md
+    ~/.claude/skills: config/skills
+
+    # Cline
+    ~/.cline/skills: config/skills
+
     # Apps
     # ~/.hammerspoon: applications/.hammerspoon
     # ~/.zazurc.json: applications/.zazurc.json
