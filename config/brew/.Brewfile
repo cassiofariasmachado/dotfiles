@@ -36,6 +36,7 @@ brew "wget"
 brew "yq"
 brew "zsh"
 brew "sass/sass/sass"
+brew "claude-code"
 
 cask "bruno"
 cask "font-jetbrains-mono"
