@@ -8,7 +8,9 @@ cask "microsoft-edge"
 cask "rectangle"
 cask "spotify"
 cask "visual-studio-code"
+cask "adobe-acrobat-reader"
 
 mas "HP", id: 1474276998
 mas "WhatsApp", id: 310633997
+mas "Telegram", id: 747648890
 mas "Windows App", id: 1295203466
