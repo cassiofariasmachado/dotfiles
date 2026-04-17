@@ -55,6 +55,15 @@
     ~/.claude/CLAUDE.md:
       ignore-missing: true
       path: config/claude/CLAUDE.md
+    ~/.claude/agents:
+      ignore-missing: true
+      path: config/claude/agents
+    ~/.claude/hooks:
+      ignore-missing: true
+      path: config/claude/hooks
+    ~/.claude/rules:
+      ignore-missing: true
+      path: config/claude/rules
     ~/.claude/skills: config/skills
 
     # Cline
