@@ -42,6 +42,7 @@ cask "font-jetbrains-mono"
 cask "font-meslo-lg-nerd-font"
 cask "jetbrains-toolbox"
 cask "kitty"
+cask "dotnet-runtime"
 
 mas "Bitwarden", id: 1352778147
 mas "Microsoft To Do", id: 1274495053
