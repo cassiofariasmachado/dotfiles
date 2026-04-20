@@ -64,10 +64,10 @@
     ~/.claude/rules:
       ignore-missing: true
       path: config/claude/rules
-    ~/.claude/skills: config/skills
+    ~/.claude/skills: config/skills/skills
 
     # Cline
-    ~/.cline/skills: config/skills
+    ~/.cline/skills: config/skills/skills
 
     # Apps
     # ~/.hammerspoon: applications/.hammerspoon
