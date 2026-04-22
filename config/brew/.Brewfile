@@ -36,6 +36,7 @@ brew "watch"
 brew "wget"
 brew "yq"
 brew "zsh"
+brew "zsh-completions"
 brew "sass/sass/sass"
 brew "shellcheck"
 
