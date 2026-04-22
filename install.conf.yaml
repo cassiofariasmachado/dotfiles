@@ -69,6 +69,9 @@
     # Cline
     ~/.cline/skills: config/skills/skills
 
+    # Atuin
+    ~/.config/atuin/config.toml: config/atuin/config.toml
+
     # Apps
     # ~/.hammerspoon: applications/.hammerspoon
     # ~/.zazurc.json: applications/.zazurc.json

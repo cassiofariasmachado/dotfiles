@@ -1,6 +1,7 @@
 tap "dart-lang/dart"
 tap "sass/sass"
 
+brew "atuin"
 brew "bat"
 brew "cloud-provider-kind"
 brew "cmake"
