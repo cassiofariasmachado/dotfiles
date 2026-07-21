@@ -3,3 +3,6 @@ auto_sync = false
 style = "compact"
 enter_accept = false
 inline_height = 40
+
+[theme]
+name = "marine"
