@@ -5,15 +5,15 @@
 
 [submodule "omp-themes"]
 	path = config/omp-themes
-	url = https://github.com/cassiofariasmachado/omp-themes
+	url = git@github.com:cassiofariasmachado/omp-themes
 
 [submodule "posh-config"]
 	path = config/posh
-	url = https://github.com/cassiofariasmachado/posh-config
+	url = git@github.com:cassiofariasmachado/posh-config
 
 [submodule "zsh-config"]
 	path = config/zsh
-	url = https://github.com/cassiofariasmachado/zsh-config
+	url = git@github.com:cassiofariasmachado/zsh-config
 
 [submodule "claude-config"]
 	path = config/claude
