@@ -15,6 +15,7 @@
     ~/.config/git/work.gitconfig:
       ignore-missing: true
       path: config/git/work.gitconfig
+    ~/.config/git/personal.gitconfig: config/git/personal.gitconfig
 
     # Oh My Posh themes
     ~/default.omp.json: config/omp-themes/default.omp.json
