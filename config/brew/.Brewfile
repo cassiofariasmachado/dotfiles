@@ -1,4 +1,5 @@
 tap "anomalyco/tap"
+tap "dart-lang/dart"
 tap "derailed/k9s"
 tap "fluxcd/tap"
 tap "jandedobbeleer/oh-my-posh"
