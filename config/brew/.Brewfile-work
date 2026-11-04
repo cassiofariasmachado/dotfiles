@@ -1,6 +1,24 @@
+dwc_tap = ENV["HOMEBREW_DWC_TAP"]
+urm_tools_tap = ENV["HOMEBREW_URM_TOOLS_TAP"]
+
+if dwc_tap.nil? || dwc_tap.empty?
+  raise "HOMEBREW_DWC_TAP environment variable is not set"
+end
+
+if urm_tools_tap.nil? || urm_tools_tap.empty?
+  raise "HOMEBREW_URM_TOOLS_TAP environment variable is not set"
+end
+
 tap "int128/kubelogin"
+tap "sap/sapmachine"
+tap "sap/dwc", dwc_tap
+tap "urm-community/urmtools", urm_tools_tap
 
 brew "cloudfoundry-cli"
-brew "int128/kubelogin/kubelogin"
+brew "int128/kubelogin/kubelogin", trusted: true
 brew "krew"
 brew "kyma-cli"
+brew "sap/dwc/dwc-cli"
+brew "urm-community/urmtools/uctl"
+
+cask "sap/sapmachine/sapmachine25-jdk", trusted: true
