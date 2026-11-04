@@ -1,5 +1,8 @@
-cask "displaylink"
+cask "adobe-acrobat-reader"
+cask "battle-net"
+cask "claude"
 cask "discord"
+cask "displaylink"
 cask "docker-desktop"
 cask "firefox"
 cask "google-drive"
@@ -8,9 +11,12 @@ cask "microsoft-edge"
 cask "rectangle"
 cask "spotify"
 cask "visual-studio-code"
-cask "adobe-acrobat-reader"
 
 mas "HP", id: 1474276998
-mas "WhatsApp", id: 310633997
+mas "Keynote", id: 409183694
+mas "Kindle", id: 302584613
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
 mas "Telegram", id: 747648890
+mas "WhatsApp", id: 310633997
 mas "Windows App", id: 1295203466
