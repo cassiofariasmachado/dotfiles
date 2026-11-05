@@ -1,6 +1,7 @@
 cask "adobe-acrobat-reader"
 cask "battle-net"
 cask "claude"
+cask "cloudflare-warp"
 cask "discord"
 cask "displaylink"
 cask "docker-desktop"
