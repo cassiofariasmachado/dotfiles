@@ -63,3 +63,12 @@
   daily = !sh -c 'git log --since=yesterday --format=%s --author=\"`git config user.email`\"'
   graph = log --graph
   squash = "!f() { git reset --hard $1; git merge --squash HEAD@{1}; git commit; }; f"
+
+[commit]
+  gpgsign = true
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  allowedSignersFile = ~/.ssh/allowed_signers
